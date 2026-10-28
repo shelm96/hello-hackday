@@ -17,7 +17,7 @@
       justify-content: center;
       padding: 24px;
       font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-      background: linear-gradient(135deg, #6d5dfc 0%, #c86dd7 50%, #ff8a65 100%);
+      background: linear-gradient(135deg, #0f5132 0%, #2e9b5f 50%, #b6e36b 100%);
     }
 
     .card {
@@ -25,14 +25,17 @@
       border-radius: 28px;
       padding: 56px 72px;
       text-align: center;
-      box-shadow: 0 24px 60px rgba(40, 20, 80, 0.25);
+      box-shadow: 0 24px 60px rgba(10, 40, 20, 0.28);
     }
 
     h1 {
       font-size: clamp(2.5rem, 8vw, 4.5rem);
       font-weight: 800;
       letter-spacing: -0.03em;
-      background: linear-gradient(90deg, #4b3bd6, #c2410c);
+    }
+
+    .grad {
+      background: linear-gradient(90deg, #14532d, #65a30d);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -45,7 +48,7 @@
 </head>
 <body>
   <main class="card">
-    <h1>Hello World</h1>
+    <h1><span class="grad">Hello World</span> <span class="emoji">🫨</span></h1>
   </main>
 </body>
 </html>
