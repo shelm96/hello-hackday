@@ -4,8 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #6d5dfc 0%, #c86dd7 50%, #ff8a65 100%);
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 28px;
+      padding: 56px 72px;
+      text-align: center;
+      box-shadow: 0 24px 60px rgba(40, 20, 80, 0.25);
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      background: linear-gradient(90deg, #4b3bd6, #c2410c);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 40px 32px; border-radius: 22px; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <main class="card">
+    <h1>Hello World</h1>
+  </main>
 </body>
 </html>
